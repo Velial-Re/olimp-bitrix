@@ -1,0 +1,111 @@
+.button {
+    padding: 12px 41px;
+    color: var(--white);
+    background: var(--primary-dark);
+    border-radius: 16px;
+    backdrop-filter: blur(64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+    min-width: 268px;
+    max-width: 268px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    min-height: 51px;
+}
+@media (max-width: 768px) {
+    .button {
+        font-size: 14px;
+        min-width: 0;
+        padding: 6px 20px;
+    }
+}
+.button:hover {
+    background: var(--primary-darker);
+}
+
+.button > i {
+    font-size: 12px;
+    margin-top: 3px;
+    transition: var(--transition);
+}
+
+.button:hover > i {
+    transform: translateX(5px);
+}
+
+.button--outline {
+    background: transparent;
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+    text-wrap: nowrap;
+    padding: 12px 24px;
+}
+.button--outline > i {
+    margin-top: 2px;
+}
+
+.button--outline:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+.button--bg-white {
+    color: var(--primary-dark);
+    background: var(--white);
+    padding: 12px 66.5px;
+}
+.button--bg-white > i {
+    margin-top: 3px;
+}
+
+.button--bg-white:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.button--large {
+    padding: 16.5px 60.5px;
+}
+
+.button--link {
+    color: var(--primary-darker);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-decoration: underline;
+    transition: all .5s;
+}
+
+.button--link:hover {
+    color: #6398C3;
+}
+
+.button--nav {
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-dark);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 16px;
+}
+
+.button--nav:hover {
+    background: #E6F0F8;
+}

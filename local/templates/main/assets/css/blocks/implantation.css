@@ -1,0 +1,387 @@
+.implantation {
+    position: relative;
+}
+
+.implantation__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.implantation__card {
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.implantation__card-content {
+    display: flex;
+    align-items: stretch;
+    min-height: 320px;
+    gap: 20px;
+}
+
+.implantation__card-left {
+    flex: 1;
+    display: flex;
+    padding: 49px 100px 48px 65px;
+    gap: 123px;
+    align-items: center;
+    background: var(--blue-light-01);
+    border-radius: 24px;
+    max-height: 346px;
+    height: 346px;
+}
+
+.implantation__image {
+    flex: 0 0 280px;
+    position: relative;
+    border-radius: 16px;
+    min-height: 267px;
+
+}
+
+.implantation__image:not(:has(.implantation__decorations)) img {
+    width: 100%;
+    min-height: 267px;
+    object-fit: cover;
+    display: block;
+}
+
+.implantation__decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.implantation__decoration {
+    position: absolute;
+}
+
+.implantation__decoration--1 {
+    top: 43px;
+    right: 0;
+    width: 71px;
+    height: 98px;
+    z-index: 3;
+}
+
+.implantation__decoration--2 {
+    width: 40px;
+    height: 55px;
+    opacity: 0.2;
+    right: 18px;
+    top: -18px;
+    z-index: 2;
+    filter: blur(1px);
+}
+
+.implantation__decoration--3 {
+    width: 40px;
+    height: 55px;
+    opacity: 0.2;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+    filter: blur(2px);
+}
+
+.implantation__decoration--4 {
+    width: 62px;
+    height: 85px;
+    opacity: 0.2;
+    right: -45px;
+    top: -25px;
+}
+
+.implantation__decoration--5 {
+    width: 62px;
+    height: 85px;
+    opacity: 0.2;
+    bottom: 6px;
+    right: -31px;
+}
+
+.implantation__info {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.implantation__title {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.implantation__description {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.implantation__button {
+    align-self: flex-start;
+}
+
+.implantation__stats {
+    max-width: 340px;
+    max-height: 346px;
+    width: 100%;
+    background: #026994;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border-radius: 24px;
+    position: relative;
+    padding: 48px;
+}
+
+.implantation__stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../img/implantation/implantation-1.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 65%;
+    z-index: 1;
+}
+
+.implantation__stat {
+    text-align: start;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.implantation__stat-number {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.implantation__guarantee {
+    background: #02567A;
+    border-radius: 24px;
+    padding: 16px 64px;
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-top: -2px;
+}
+
+.implantation__guarantee-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.implantation__guarantee-content {
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.implantation__guarantee-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.implantation__guarantee-text {
+    max-width: 396px;
+    margin: 0;
+}
+
+.tooth-mask-container {
+    position: relative;
+}
+
+.implantation__tooth-mask {
+    position: relative;
+    width: 267px;
+    height: 267px;
+    z-index: 3;
+}
+
+.tooth-masked-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    -webkit-mask-image: url('../../img/implantation/tooth.png');
+    mask-image: url('../../img/implantation/tooth.png');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.implantation__tooth-mask:hover .tooth-masked-image {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.implantation__card {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.implantation__guarantee {
+    min-height: 96px;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+@media (max-width: 1224px) {
+    .implantation__card-content {
+        flex-direction: column;
+    }
+
+    .implantation__stats {
+        max-width: 100%;
+    }
+
+    .implantation__stats::before {
+        right: 40px;
+        background-position: right bottom;
+        background-size: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .implantation__card-left {
+        padding: 32px;
+        gap: 32px;
+    }
+
+    .implantation__image {
+        flex: 0 0 220px;
+    }
+
+    .implantation__title {
+        font-size: 32px;
+    }
+
+    .implantation__stats {
+        flex: 0 0 240px;
+    }
+
+    .implantation__stat-number {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .implantation {
+        padding: 60px 0;
+    }
+
+
+    .implantation__card-left {
+        padding: 32px;
+        gap: 24px;
+        text-align: center;
+        max-height: 100%;
+        flex-direction: column;
+    }
+    .implantation__info{
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .implantation__image {
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .implantation__title {
+        font-size: 28px;
+    }
+
+    .implantation__stats {
+        flex: none;
+        padding: 32px;
+        border-radius: 0;
+    }
+
+    .implantation__guarantee {
+        padding: 20px 32px;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .implantation__guarantee-title {
+        font-size: 20px;
+    }
+    .implantation__button{
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .implantation__card-left {
+        padding: 12px;
+    }
+
+    .implantation__title {
+        font-size: 24px;
+    }
+
+    .implantation__description {
+        font-size: 14px;
+    }
+
+    .implantation__stat-number {
+        font-size: 48px;
+    }
+
+    .implantation__stat-label {
+        font-size: 16px;
+    }
+
+    .implantation__guarantee {
+        padding: 16px 24px;
+    }
+
+    .implantation__guarantee-title {
+        font-size: 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .implantation__card,
+    .implantation__guarantee {
+        animation: none;
+    }
+}

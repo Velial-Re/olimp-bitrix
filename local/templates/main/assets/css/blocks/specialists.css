@@ -1,0 +1,297 @@
+.specialists {
+    position: relative;
+}
+
+.specialists__content {
+    width: 100%;
+}
+
+.specialists__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.specialists__info {
+    flex: 1;
+    max-width: 871px;
+}
+
+.specialists__title {
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+.specialists__title-highlight {
+    color: var(--primary-color);
+}
+
+.specialists__arrow {
+    background: #F4F8FC;
+}
+
+.specialists__arrow > .swiper-navigation-icon {
+    display: none;
+}
+
+.specialists__arrow:hover {
+    background: #E6F0F8;
+}
+
+.specialists__description {
+    color: var(--text-muted);
+    margin: 0;
+    width: 100%;
+    text-wrap: balance;
+}
+
+.specialists__action {
+    flex-shrink: 0;
+}
+
+.specialists__slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.specialists__cards {
+    display: flex;
+    transition: all 0.4s ease;
+}
+
+.specialists__card {
+    flex: 0 0 calc(25% - 15px);
+    background: #F4F8FC;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.specialists__card:hover {
+    background: #E6F0F8;
+}
+
+.specialists__card-image {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    background: #026994;
+    display: flex;
+    align-items: flex-end;
+}
+
+.specialists__card-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/specialists/specialist-bg.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.specialists__card-image img {
+    width: auto;
+    height: 100%;
+    max-width: 80%;
+    object-fit: cover;
+    object-position: center bottom;
+    position: relative;
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.specialists__card:hover .specialists__card-image img {
+    transform: scale(1.05);
+}
+
+.specialists__card-content {
+    min-height: 182px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.specialists__card-name {
+    max-width: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-muted);
+    line-height: 1.1;
+}
+
+.specialists__card-position {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.1;
+}
+
+.specialists__card-link {
+    display: inline-block;
+}
+
+.specialists__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.specialists__dots {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.specialists__dots .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--blue-light-02);
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 1;
+}
+
+.specialists__dots .swiper-pagination-bullet-active {
+    background: var(--primary-dark);
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+    background: var(--primary-darker);
+    transition: all 0.3s ease;
+}
+
+.specialists__arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.specialists__header {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.specialists__card {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.specialists__card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.specialists__card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.specialists__card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.specialists__card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@media (max-width: 1200px) {
+    .specialists__card {
+        flex: 0 0 calc(33.333% - 16px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .specialists__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .specialists__card-image {
+        height: 240px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+    .specialists__card {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .specialists {
+        padding: 60px 0;
+    }
+
+    .specialists__title {
+        font-size: 36px;
+    }
+
+    .specialists__description {
+        font-size: 16px;
+    }
+
+    .specialists__navigation {
+        gap: 16px;
+    }
+
+    .specialists__arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .specialists__dots {
+        gap: 8px;
+    }
+
+    .specialists__dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .specialists__card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .specialists__card,
+    .specialists__header {
+        animation: none;
+    }
+
+    .specialists__card:hover {
+        transform: none;
+    }
+
+    .specialists__card:hover .specialists__card-image img {
+        transform: none;
+    }
+}

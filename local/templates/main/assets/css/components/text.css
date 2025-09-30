@@ -1,0 +1,148 @@
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0;
+}
+
+.text--size-hero {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: 0;
+}
+
+.text--size-xl {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+@media (max-width: 768px) {
+    .text--size-xl{
+        font-size: 40px;
+    }
+}
+.text--size-lg {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+.text--size-md {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+.text--size-regular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text--size-small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text--size-xs {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 90%;
+    letter-spacing: 0;
+}
+
+.text--numeric {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+.text--body-m{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+.text--weight-bold {
+    font-weight: 700;
+}
+
+.text--weight-extrabold {
+    font-weight: 800;
+}
+
+.text--weight-medium {
+    font-weight: 500;
+}
+
+.text--family-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.text--family-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text--line-height-100 {
+    line-height: 100%;
+}
+
+.text--line-height-110 {
+    line-height: 110%;
+}
+
+.text--line-height-120 {
+    line-height: 120%;
+}
+
+.text--line-height-130 {
+    line-height: 130%;
+}
+
+.text--decoration-underline {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+}
+
+.text--spacing-tight {
+    letter-spacing: -0.03em;
+}
+
+.text--spacing-medium {
+    letter-spacing: -0.02em;
+}
+
+.text--align-center {
+    text-align: center;
+}
+
+.text--align-left {
+    text-align: left;
+}
+
+.text--align-right {
+    text-align: right;
+}

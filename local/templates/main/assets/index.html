@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоматология "Олимп" №1</title>
+    <meta name="description" content="Современная стоматологическая клиника Олимп.">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon-dark.svg">
+    <!-- Стили -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Скрипты -->
+    <script src="./js/animations.js"></script>
+    <script src="./js/stars.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/sliders.js" defer></script>
+    <script src="./js/header-mobile.js"></script>
+</head>
+<body>
+<!-- Шапка сайта -->
+<header class="header" id="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-content">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="./img/logo/logo.svg" alt="Olimp" class="header__logo-icon">
+                    </a>
+                </div>
+
+                <div class="header__contacts">
+                    <div class="header__contact-group">
+                        <div class="header__contact-item">
+                            <span class="header__contact-label text--numeric">Адрес:</span>
+                            <div class="header__contact-value text--numeric">
+                                <div>Ул. Красный Путь, 70</div>
+                                <div>Ул. Жукова, 78</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__contact-group">
+                        <div class="header__contact-item">
+                            <span class="header__contact-label text--numeric">Режим:</span>
+                            <div class="header__contact-value text--numeric">
+                                <div>Пн-Сб — 08:00-20:00</div>
+                                <div>Вс — 09:00-18:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__contact-group">
+                        <div class="header__contact-item">
+                            <span class="header__contact-label text--numeric">Телефон:</span>
+                            <a href="tel:+73812475574" class="header__phone text--numeric">+7 (3812) 47-55-74</a>
+                        </div>
+
+                        <div class="header__contact-item">
+                            <span class="header__contact-label text--numeric">Почта:</span>
+                            <a href="mailto:stomolomp55@mail.ru"
+                               class="header__email text--numeric">stomolomp55@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__badges">
+                    <div class="header__badge">
+                        <div class="header__badge-icon">
+                            <img src="./img/header/header-1.png" alt="Стоматологическая ассоциация России">
+                        </div>
+                        <span class="text--size-xs">Стоматологическая ассоциация России</span>
+                    </div>
+
+                    <div class="header__quality">
+                        <img src="./img/vision.svg" alt="quality">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__main">
+        <div class="container">
+            <div class="header__main-content">
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Главная</a>
+                        </li>
+                        <li class="header__nav-item header__nav-item--dropdown">
+                            <a href="#" class="header__nav-link" aria-expanded="false">
+                                <span>О нас</span>
+                                <i class="fas fa-chevron-down header__nav-arrow"></i>
+                            </a>
+                            <div class="header__dropdown">
+                                <a href="#" class="header__dropdown-link">Специалисты</a>
+                                <a href="#" class="header__dropdown-link">Отзывы</a>
+                                <a href="#" class="header__dropdown-link">Документы</a>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Услуги</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Цены</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Калькулятор</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Акции</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Новости</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Вакансии</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="header__burger" id="mobileMenuOpen" aria-label="Открыть меню">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+
+                <div class="header__actions">
+                    <div class="header__social">
+                        <a href="#" class="header__social-item" aria-label="Telegram">
+                            <img src="./img/header/header-2.svg" alt="telegram">
+                        </a>
+                        <a href="#" class="header__social-item" aria-label="WhatsApp">
+                            <img src="./img/header/header-3.svg" alt="whatsapp">
+                        </a>
+                    </div>
+
+                    <button class="button">
+                        <span>Запись на прием</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div class="header__mobile-menu" id="mobileMenu">
+        <button class="header__burger header__burger--active" id="mobileMenuClose" aria-label="Закрыть меню">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+        <ul class="header__mobile-nav">
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Главная</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">О нас</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Услуги</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Цены</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Калькулятор</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Акции</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Новости</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Контакты</a>
+            </li>
+            <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Вакансии</a>
+            </li>
+        </ul>
+
+        <div class="header__mobile-contacts">
+            <div class="header__mobile-contact-item">
+                <a href="tel:+73812475574" class="header__mobile-phone">+7 (3812) 47-55-74</a>
+                <a href="mailto:stomolomp55@mail.ru" class="header__mobile-email">stomolomp55@mail.ru</a>
+            </div>
+
+            <div class="header__mobile-contact-item">
+                <div class="header__mobile-address">
+                    <div>Ул. Красный Путь, 70</div>
+                    <div>Ул. Жукова, 78</div>
+                </div>
+            </div>
+
+            <div class="header__mobile-contact-item">
+                <div class="header__mobile-address">
+                    <div>Пн-Сб — 08:00-20:00</div>
+                    <div>Вс — 09:00-18:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__overlay" id="mobileOverlay"></div>
+</header>
+<!-- Главный баннер -->
+<main class="main">
+    <section class="hero">
+        <div class="hero__image">
+            <img src="./img/hero/hero.png" alt="Стоматология Олимп" class="hero__img" loading="lazy">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title text--size-hero">
+                    Стоматология «Олимп» №1
+                </h1>
+                <p class="hero__subtitle text--size-md">по рекомендациям пациентов</p>
+                <button class="hero__cta button">
+                    <span>Запись на прием</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Акции -->
+    <section class="promotions">
+        <div class="container">
+            <div class="promotions__content">
+                <div class="promotions__info">
+                    <div class="promotions__header">
+                        <h2 class="promotions__title text--size-xl">Акции</h2>
+                        <p class="promotions__description text--body-m">
+                            В разделе "Акции" мы собрали самые выгодные предложения на наши товары и услуги.
+                        </p>
+                    </div>
+
+                    <div class="promotions__decoration">
+                        <img src="./img/promotions/promotions-3.svg" alt="Промо иконка"
+                             class="promotions__decoration-icon">
+                    </div>
+                </div>
+
+                <div class="promotions__slider swiper" id="promotionsSwiper">
+                    <div class="promotions__cards swiper-wrapper" id="promotionsCards">
+                        <div class="promotions__card swiper-slide">
+                            <div class="promotions__card-image">
+                                <img src="./img/promotions/promo-1.png" alt="Имплантация до конца лета">
+                            </div>
+                            <div class="promotions__card-content">
+                                <h3 class="promotions__card-title">Имплантация до конца лета по прежним ценам</h3>
+                                <p class="promotions__card-text">Зафиксируйте стоимость!</p>
+                                <a href="#" class="promotions__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="promotions__card swiper-slide">
+                            <div class="promotions__card-image">
+                                <img src="./img/promotions/promo-2.png" alt="Предложение на Remars 2 White">
+                            </div>
+                            <div class="promotions__card-content">
+                                <h3 class="promotions__card-title">Предложение на Remars 2 White в августе!</h3>
+                                <p class="promotions__card-text">750 руб. вместо 1120 руб.</p>
+                                <a href="#" class="promotions__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="promotions__card swiper-slide">
+                            <div class="promotions__card-image">
+                                <img src="./img/promotions/promo-1.png" alt="Скидка на лечение">
+                            </div>
+                            <div class="promotions__card-content">
+                                <h3 class="promotions__card-title">Скидка 20% на комплексное лечение</h3>
+                                <p class="promotions__card-text">При записи до конца месяца</p>
+                                <a href="#" class="promotions__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotions__navigation">
+                        <button class="promotions__nav-btn promotions__nav-btn--prev button--nav swiper-button-prev"
+                                id="promoPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="promotions__nav-btn promotions__nav-btn--next button--nav swiper-button-next"
+                                id="promoNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Секция услуг -->
+    <section class="services">
+        <div class="container">
+            <div class="services__content">
+                <div class="services__header">
+                    <div class="services__info">
+                        <h2 class="services__title text--size-xl">
+                            Все <span class="services__title-highlight">необходимые услуги</span> в одном месте
+                        </h2>
+                        <p class="services__description text--body-m">
+                            В нашей стоматологической клинике мы предлагаем широкий спектр услуг, чтобы
+                            удовлетворить все ваши потребности в уходе за зубами и полостью рта.
+                        </p>
+                    </div>
+                    <div class="services__action">
+                        <button class="button button--outline">
+                            <span>Смотреть все услуги</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="services__grid">
+                    <div class="services__card services__card--main">
+                        <span class="services__card-label">Имплантация зубов —<br> выбор современности</span>
+                        <div class="services__card-content">
+                            <h3 class="services__card-title">Имплантация</h3>
+                        </div>
+                        <div class="services__card-bg">
+                            <img src="img/services/services-implantation.png" alt="Имплантация зубов"
+                                 class="services__card-image" loading="lazy"
+                                 decoding="async">>
+                        </div>
+                    </div>
+
+                    <div class="services__card services__card--vertical">
+                        <span class="services__card-label">Наркоз</span>
+                        <div class="services__card-content">
+                            <h3 class="services__card-title">Наркоз</h3>
+                        </div>
+                        <div class="services__card-bg">
+                            <img src="img/services/services-anesthesia.png" alt="Наркоз" class="services__card-image"
+                                 loading="lazy"
+                                 decoding="async">>
+                        </div>
+                    </div>
+
+                    <div class="services__card services__card--vertical">
+                        <span class="services__card-label">Протезирование</span>
+                        <div class="services__card-content">
+                            <h3 class="services__card-title">Протезирование</h3>
+                        </div>
+                        <div class="services__card-bg">
+                            <img src="img/services/services-prosthetics.png" alt="Протезирование" class="services__card-image"
+                                 loading="lazy"
+                                 decoding="async">>
+                        </div>
+                    </div>
+
+                    <div class="services__card services__card--vertical">
+                        <span class="services__card-label">Детская стоматология</span>
+                        <div class="services__card-content">
+                            <h3 class="services__card-title">Детская стоматология</h3>
+                        </div>
+                        <div class="services__card-bg">
+                            <img src="img/services/services-dentists.png" alt="Детская стоматология"
+                                 class="services__card-image" loading="lazy"
+                                 decoding="async">>
+                        </div>
+                    </div>
+
+                    <div class="services__card services__card--vertical">
+                        <span class="services__card-label">Подготовка к лечению</span>
+                        <div class="services__card-content">
+                            <h3 class="services__card-title">Подготовка к лечению</h3>
+                        </div>
+                        <div class="services__card-bg">
+                            <img src="img/services/services-treatment.png" alt="Подготовка к лечению"
+                                 class="services__card-image" loading="lazy"
+                                 decoding="async">>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- О нас -->
+    <section class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__header">
+                    <h2 class="about__title text--size-xl">О клинике</h2>
+                    <button class="button button--outline">
+                        <span>Подробнее о клинике</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="about__main">
+                    <div class="about__stats">
+                        <div class="about__stat-card">
+                            <div class="about__stat-icon">
+                                <img src="./img/about/about-2.svg" alt="employers" class="about__stat-icon"/>
+                            </div>
+                            <div class="about__stat-content">
+                                <div class="about__stat-number">142</div>
+                                <div class="about__stat-label">Профессиональных сотрудника</div>
+                            </div>
+                        </div>
+
+                        <div class="about__stat-card">
+                            <div class="about__stat-icon">
+                                <img src="./img/about/about-3.svg" alt="calendar" class="about__stat-icon"/>
+                            </div>
+                            <div class="about__stat-content">
+                                <div class="about__stat-number">10</div>
+                                <div class="about__stat-label">Лет успешной работы</div>
+                            </div>
+                        </div>
+
+                        <div class="about__stat-card">
+                            <div class="about__stat-icon">
+                                <img src="./img/about/about-4.svg" alt="implants" class="about__stat-icon"/>
+                            </div>
+                            <div class="about__stat-content">
+                                <div class="about__stat-number">3434</div>
+                                <div class="about__stat-label">Установленных имплантов</div>
+                            </div>
+                        </div>
+
+                        <div class="about__stat-card">
+                            <div class="about__stat-icon">
+                                <img src="./img/about/about-5.svg" alt="clients" class="about__stat-icon"/>
+                            </div>
+                            <div class="about__stat-content">
+                                <div class="about__stat-number">11090</div>
+                                <div class="about__stat-label">Довольных клиента</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__image">
+                        <img src="./img/about/about-1.jpg" alt="О клинике ОЛИМП" class="about__img">
+                        <div class="about__image-overlay">
+                            <div class="about__image-content">
+                                <h3 class="about__image-title">Клиника "Олимп" — с вами на пути к вершине здоровья!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Имплантация -->
+    <section class="implantation">
+        <div class="container">
+            <div class="implantation__content">
+                <div class="implantation__card">
+                    <div class="implantation__card-content">
+                        <div class="implantation__card-left">
+                            <div class="implantation__image tooth-mask-container">
+                                <div class="implantation__tooth-mask">
+                                    <img src="./img/implantation/implantation-3.jpg" alt="Имплантация"
+                                         class="tooth-masked-image">
+                                </div>
+                                <div class="implantation__decorations">
+                                    <img src="img/implantation/tooth-decoration-1.svg" alt="implantation-decorations"
+                                         class="implantation__decoration implantation__decoration--1">
+                                    <img src="img/implantation/tooth-decoration-1.svg" alt="implantation-decorations"
+                                         class="implantation__decoration implantation__decoration--2">
+                                    <img src="img/implantation/tooth-decoration-1.svg" alt="implantation-decorations"
+                                         class="implantation__decoration implantation__decoration--3">
+                                    <img src="img/implantation/tooth-decoration-1.svg" alt="implantation-decorations"
+                                         class="implantation__decoration implantation__decoration--4">
+                                    <img src="img/implantation/tooth-decoration-1.svg"
+                                         alt="implantation-decorations"
+                                         class="implantation__decoration implantation__decoration--5">
+                                </div>
+                            </div>
+                            <div class="implantation__info">
+                                <h2 class="implantation__title text--size-xl">Имплантация</h2>
+                                <p class="implantation__description text--body-m">
+                                    Клиника предлагает индивидуальный подход
+                                    к каждому случаю, включая предварительную
+                                    диагностику и планирование лечения.
+                                </p>
+                                <button class="implantation__button button button--outline">
+                                    <span>Подробнее</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="implantation__stats">
+                            <div class="implantation__stat">
+                                <div class="implantation__stat-number">3434</div>
+                                <div class="implantation__stat-label text--body-m">Имплантов установлено</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="implantation__guarantee">
+                    <div class="implantation__guarantee-icon">
+                        <img src="./img/implantation/implantation-2.svg" alt="guarantee"/>
+                    </div>
+                    <div class="implantation__guarantee-content">
+                        <h3 class="implantation__guarantee-title">Пожизненная гарантия на наше лечение!</h3>
+                        <p class="implantation__guarantee-text text--body-m">
+                            Мы обеспечим надежность и долговечность
+                            каждого проведенного лечения
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Специалисты -->
+    <section class="specialists">
+        <div class="container">
+            <div class="specialists__content">
+                <div class="specialists__header">
+                    <div class="specialists__info">
+                        <h2 class="specialists__title  text--size-xl">
+                            Наши <span class="specialists__title-highlight">специалисты</span>
+                        </h2>
+                        <p class="specialists__description text--body-m">
+                            В нашей стоматологической клинике работает команда высококвалифицированных специалистов,
+                            каждый из которых обладает богатым опытом и глубокими знаниями в своей области.
+                        </p>
+                    </div>
+                    <div class="specialists__action">
+                        <button class="button button--outline">
+                            <span>Подробнее</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="specialists__slider swiper" id="specialistsSwiper">
+                    <div class="specialists__cards swiper-wrapper" id="specialistsCards">
+                        <div class="specialists__card swiper-slide">
+                            <div class="specialists__card-image">
+                                <img src="img/specialists/specialist-director.png" alt="Хижук Александр Викторович">
+                            </div>
+                            <div class="specialists__card-content">
+                                <h3 class="specialists__card-name">Хижук Александр Викторович</h3>
+                                <p class="specialists__card-position">Директор, врач-стоматолог-хирург, ортопед</p>
+                                <a href="#" class="specialists__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="specialists__card swiper-slide">
+                            <div class="specialists__card-image">
+                                <img src="img/specialists/specialist-chief-physician.png" alt="Гузь Оксана Викторовна">
+                            </div>
+                            <div class="specialists__card-content">
+                                <h3 class="specialists__card-name">Гузь Оксана Викторовна</h3>
+                                <p class="specialists__card-position">Главный врач, врач-стоматолог-терапевт,
+                                    ортопед</p>
+                                <a href="#" class="specialists__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="specialists__card swiper-slide">
+                            <div class="specialists__card-image">
+                                <img src="img/specialists/specialist-executive-director.png" alt="Попелова Марина Николаевна">
+                            </div>
+                            <div class="specialists__card-content">
+                                <h3 class="specialists__card-name">Попелова Марина Николаевна</h3>
+                                <p class="specialists__card-position">Исполнительный директор, клинический психолог</p>
+                                <a href="#" class="specialists__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="specialists__card swiper-slide">
+                            <div class="specialists__card-image">
+                                <img src="img/specialists/specialist-anesthesiologist-resuscitator.png" alt="Рошка Иван Александрович">
+                            </div>
+                            <div class="specialists__card-content">
+                                <h3 class="specialists__card-name">Рошка Иван Александрович</h3>
+                                <p class="specialists__card-position">Врач-анестезиолог-реаниматолог</p>
+                                <a href="#" class="specialists__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="specialists__card swiper-slide">
+                            <div class="specialists__card-image">
+                                <img src="img/specialists/specialist-anesthesiologist-resuscitator.png" alt="Врач 5">
+                            </div>
+                            <div class="specialists__card-content">
+                                <h3 class="specialists__card-name">Сидоров Петр Иванович</h3>
+                                <p class="specialists__card-position">Врач-стоматолог-хирург</p>
+                                <a href="#" class="specialists__card-link button--link">Подробнее</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="specialists__navigation">
+                        <button class="specialists__arrow specialists__arrow--prev  button--nav swiper-button-prev"
+                                id="specialistsPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <div class="specialists__dots" id="specialistsDots">
+                            <span class="specialists__dot specialists__dot--active" data-slide="0"></span>
+                            <span class="specialists__dot" data-slide="1"></span>
+                            <span class="specialists__dot" data-slide="2"></span>
+                        </div>
+
+                        <button class="specialists__arrow specialists__arrow--next button--nav swiper-button-next"
+                                id="specialistsNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Отзывы -->
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__content">
+                <div class="reviews__header">
+                    <div class="reviews__info">
+                        <h2 class="reviews__title text--size-xl">Отзывы</h2>
+                        <p class="reviews__description text--body-m">
+                            В этом разделе вы найдете мнения и впечатления наших клиентов о предоставляемых услугах.
+                            <br>Мы ценим каждое ваше мнение, так как оно помогает нам становиться лучше.
+                        </p>
+                    </div>
+                    <div class="reviews__action">
+                        <button class="button button--outline">
+                            <span>Смотреть все</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="reviews__main">
+                    <div class="reviews__review reviews__review--left">
+                        <div class="reviews__date">8 апреля 2020 г.</div>
+                        <div class="reviews__author">Lyudmila Dorovskikh</div>
+                        <p class="reviews__text">
+                            Добрый день! Рекомендую клинику. Сама попала по
+                            рекомендации, очень рада, отличное обслуживание,
+                            прошла лечение у Оксаны Викторовны от госпожи до
+                            службы! Записалась перпетуационно у Александра.
+                        </p>
+                        <button class="reviews__more button--link">Подробнее</button>
+                    </div>
+
+                    <div class="reviews__video">
+                        <div class="reviews__video-preview">
+                            <img src="img/reviews/reviews-bg.png" alt="Видео отзыв">
+                            <button class="reviews__play-button">
+                                <img src="img/reviews/reviews-play-icon.svg" alt="Воспроизвести видео"
+                                     class="reviews__play-icon">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="reviews__review reviews__review--right">
+                        <div class="reviews__date">8 апреля 2020 г.</div>
+                        <div class="reviews__author">Lyudmila Dorovskikh</div>
+                        <p class="reviews__text">
+                            Добрый день! Рекомендую клинику. Сама попала по
+                            рекомендации, очень рада, отличное обслуживание,
+                            прошла лечение у Оксаны Викторовны от госпожи до
+                            службы! Записалась перпетуационно у Александра.
+                        </p>
+                        <button class="reviews__more button--link">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="reviews__ratings">
+                    <div class="reviews__rating-card">
+                        <div class="reviews__rating-logo">
+                            <img src="img/reviews/reviews-yandex.svg" alt="Яндекс">
+                        </div>
+                        <div class="reviews__rating">
+                            <div class="reviews__rating-score">4,9</div>
+                            <div class="reviews__rating-stars">
+                                <div class="stars">
+                                    <span></span>
+                                    <div class="inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__rating-card">
+                        <div class="reviews__rating-logo">
+                            <img src="img/reviews/reviews-2gis.svg" alt="2ГИС">
+                        </div>
+                        <div class="reviews__rating">
+                            <div class="reviews__rating-score">4,9</div>
+                            <div class="reviews__rating-stars">
+                                <div class="stars">
+                                    <span></span>
+                                    <div class="inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__rating-card">
+                        <div class="reviews__rating-logo">
+                            <img src="img/reviews/reviews-pro-doctors.svg" alt="ПроДокторов">
+                        </div>
+                        <div class="reviews__rating">
+                            <div class="reviews__rating-score">4,5</div>
+                            <div class="reviews__rating-stars">
+                                <div class="stars">
+                                    <span></span>
+                                    <div class="inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__rating-card">
+                        <div class="reviews__rating-logo">
+                            <img src="img/reviews/reviews-health.svg" alt="Сбер Здоровье">
+                        </div>
+                        <div class="reviews__rating">
+                            <div class="reviews__rating-score">4,5</div>
+                            <div class="reviews__rating-stars">
+                                <div class="stars">
+                                    <span></span>
+                                    <div class="inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Новости -->
+    <section class="news">
+        <div class="container">
+            <div class="news__content">
+                <div class="news__header">
+                    <div class="news__info">
+                        <h2 class="news__title text--size-xl">Новости</h2>
+                        <p class="news__description text--body-m">
+                            В нашем разделе "Новости" мы делимся актуальной информацией о нашей клинике, новых
+                            услугах и мероприятиях. Следите за обновлениями, чтобы не пропустить важные события!
+                        </p>
+                    </div>
+                    <div class="news__action">
+                        <button class="button button--outline">
+                            <span>Смотреть все</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="news__grid">
+                    <div class="news__card">
+                        <div class="news__card-image">
+                            <img src="./img/news/news-1.png" alt="Вакансии в СК «Олимп»">
+                        </div>
+                        <div class="news__card-content">
+                            <h3 class="news__card-title">Вакансии в СК «Олимп»</h3>
+                            <p class="news__card-excerpt">Присоединяйтесь к нашей олимпийской команде!</p>
+                            <a href="#" class="news__card-link button--link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="news__card">
+                        <div class="news__card-image">
+                            <img src="./img/news/news-2.png" alt="Приглашаем моделей к косметологу">
+                        </div>
+                        <div class="news__card-content">
+                            <h3 class="news__card-title">Приглашаем моделей к косметологу</h3>
+                            <p class="news__card-excerpt">Сэкономьте на стоимости косметологических процедур</p>
+                            <a href="#" class="news__card-link button--link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="news__card">
+                        <div class="news__card-image">
+                            <img src="./img/news/news-1.png" alt="Вакансии в СК «Олимп»">
+                        </div>
+                        <div class="news__card-content">
+                            <h3 class="news__card-title">Вакансии в СК «Олимп»</h3>
+                            <p class="news__card-excerpt">Присоединяйтесь к нашей олимпийской команде!</p>
+                            <a href="#" class="news__card-link button--link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="news__card">
+                        <div class="news__card-image">
+                            <img src="./img/news/news-2.png" alt="Приглашаем моделей к косметологу">
+                        </div>
+                        <div class="news__card-content">
+                            <h3 class="news__card-title">Приглашаем моделей к косметологу</h3>
+                            <p class="news__card-excerpt">Сэкономьте на стоимости косметологических процедур</p>
+                            <a href="#" class="news__card-link button--link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Секция "Записаться на консультацию" -->
+    <section class="appointment">
+        <div class="container">
+            <div class="appointment__content">
+                <div class="appointment__form-wrapper">
+                    <div class="appointment__header">
+                        <h2 class="appointment__title">Запишитесь на консультацию</h2>
+                    </div>
+
+                    <form class="appointment__form" id="appointmentForm">
+                        <div class="appointment__field">
+                            <label for="name" class="appointment__label"></label>
+                            <input
+                                    type="text"
+                                    class="appointment__input"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Как вас зовут"
+                                    autocomplete="name"
+                                    required
+                            >
+                        </div>
+
+                        <div class="appointment__field">
+                            <label for="phone" class="appointment__label"></label>
+                            <input
+                                    type="tel"
+                                    class="appointment__input"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Ваш телефон"
+                                    autocomplete="tel"
+                                    required
+                            >
+                        </div>
+
+                        <div class="appointment__field">
+                            <label for="comment" class="appointment__label"></label>
+                            <textarea
+                                    class="appointment__input appointment__input--textarea"
+                                    id="comment"
+                                    name="comment"
+                                    placeholder="Комментарий (не обязательно)"
+                                    autocomplete="off"
+                                    rows="4"
+                            ></textarea>
+                        </div>
+
+                        <div class="appointment__privacy">
+                            <label class="appointment__privacy-checkbox">
+                                <input type="checkbox" class="appointment__checkbox" required/>
+                                <span class="appointment__checkbox-custom"></span>
+                                <span class="appointment__privacy-text">
+                                    Нажимая на кнопку, вы даете согласие на обработку
+                                    <br>персональных данных и соглашаетесь с политикой конфиденциальности.
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="appointment__submit button button--bg-white">
+                            <span>Записаться</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="appointment__image">
+                    <img src="img/appointment/appointment-1.png" alt="Стоматологическая консультация"
+                         class="appointment__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<!-- Футер -->
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container footer__main">
+            <div class="footer__col footer__col--logo">
+                <img src="img/logo/logo.svg" alt="Olimp" class="footer__logo">
+                <div class="footer__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CLufyGPb?z=13" width="173" height="81"></iframe>
+                </div>
+            </div>
+            <div class="footer__col footer__col--nav">
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--main"><a href="#">Главная</a></li>
+                        <li class="footer__item"><a href="#">О нас</a></li>
+                        <li class="footer__item"><a href="#">Специалисты</a></li>
+                        <li class="footer__item"><a href="#">Отзывы</a></li>
+                        <li class="footer__item"><a href="#">Документы</a></li>
+                    </ul>
+                    <ul class="footer__list footer__list--gap16 footer__list--bold">
+                        <li class="footer__item"><a href="#">Услуги</a></li>
+                        <li class="footer__item"><a href="#">Цены</a></li>
+                        <li class="footer__item"><a href="#">Расчёт стоимости</a></li>
+                        <li class="footer__item"><a href="#">Акции</a></li>
+                        <li class="footer__item"><a href="#">Новости</a></li>
+                        <li class="footer__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__col footer__col--actions">
+                <div class="footer__inline-actions">
+                    <button class="button">
+                        Запись на прием <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social">
+                            <img src="img/footer/footer-1.svg" alt="VK">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="img/footer/footer-2.svg" alt="WhatsApp">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="img/footer/footer-3.svg" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer__contacts">
+                    <li class="footer__contacts-item"><span class="footer__contact-label">Адрес:</span> Ул. Красный
+                        Путь, 70; ул. Жукова, 78
+                    </li>
+                    <li class="footer__contacts-item"><span class="footer__contact-label">Телефон:</span> <a
+                            href="tel:+73812475574" class="footer__contact-link">+7 (3812)
+                        47-55-74</a></li>
+                    <li class="footer__contacts-item"><span class="footer__contact-label">Режим:</span> Пн-Сб:
+                        08:00-20:00, Вс: 09:00-18:00
+                    </li>
+                    <li class="footer__contacts-item"><span class="footer__contact-label">Почта:</span> <a
+                            href="mailto:stomolimp55@mail.ru"
+                            class="footer__contact-link">stomolimp55@mail.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container footer__bottom-content">
+            <div class="footer__copy text--size-small">
+                © 2025. Стоматологическая клиника ОЛИМП
+            </div>
+            <div class="footer__policy text--size-small">
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__dev text--size-small">
+                Сайт разработан в <a href="#">IT Company Asmart</a>
+            </div>
+            <div class="footer__vision">
+                <img src="img/vision.svg" alt="Версия для слабовидящих">
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
