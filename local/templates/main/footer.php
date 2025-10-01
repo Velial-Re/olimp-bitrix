@@ -13,21 +13,30 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             </div>
             <div class="footer__col footer__col--nav">
                 <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item footer__item--main"><a href="#">Главная</a></li>
-                        <li class="footer__item"><a href="#">О нас</a></li>
-                        <li class="footer__item"><a href="#">Специалисты</a></li>
-                        <li class="footer__item"><a href="#">Отзывы</a></li>
-                        <li class="footer__item"><a href="#">Документы</a></li>
-                    </ul>
-                    <ul class="footer__list footer__list--gap16 footer__list--bold">
-                        <li class="footer__item"><a href="#">Услуги</a></li>
-                        <li class="footer__item"><a href="#">Цены</a></li>
-                        <li class="footer__item"><a href="#">Расчёт стоимости</a></li>
-                        <li class="footer__item"><a href="#">Акции</a></li>
-                        <li class="footer__item"><a href="#">Новости</a></li>
-                        <li class="footer__item"><a href="#">Контакты</a></li>
-                    </ul>
+                    <?$APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "footer_left",
+                            Array(
+                                    "ROOT_MENU_TYPE" => "footer_left",
+                                    "MAX_LEVEL" => "1",
+                                    "MENU_CACHE_TYPE" => "A",
+                                    "MENU_CACHE_TIME" => "3600",
+                                    "USE_EXT" => "N",
+                                    "DELAY" => "N"
+                            )
+                    );?>
+                    <?$APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "footer_right",
+                            Array(
+                                    "ROOT_MENU_TYPE" => "footer_right",
+                                    "MAX_LEVEL" => "1",
+                                    "MENU_CACHE_TYPE" => "A",
+                                    "MENU_CACHE_TIME" => "3600",
+                                    "USE_EXT" => "N",
+                                    "DELAY" => "N"
+                            )
+                    );?>
                 </nav>
             </div>
             <div class="footer__col footer__col--actions">

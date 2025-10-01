@@ -7,24 +7,16 @@ use Bitrix\Main\Page\Asset;
 ?>
 
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="shortcut icon" type="image/x-icon" href="../../../bitrix/urlrewrite.php"/>
-</head>
-<body>
-
-
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title><? $APPLICATION->ShowTitle(); ?></title>
+    <title><?php $APPLICATION->ShowTitle(); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon"
           href="<?= SITE_TEMPLATE_PATH ?>./assets/img/favicon/favicon-dark.svg">
-
+    <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH . "/assets/style.css" ?>">
     <?php
     Asset::getInstance()->addCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/style.css");
@@ -36,12 +28,12 @@ use Bitrix\Main\Page\Asset;
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/header-mobile.js");
     ?>
 
-    <? $APPLICATION->ShowHead(); ?>
+    <?php $APPLICATION->ShowHead(); ?>
 </head>
 <body>
 
 <div id="panel">
-    <? $APPLICATION->ShowPanel(); ?>
+    <?php $APPLICATION->ShowPanel(); ?>
 </div>
 
 <!-- Шапка сайта -->
@@ -112,45 +104,22 @@ use Bitrix\Main\Page\Asset;
         <div class="container">
             <div class="header__main-content">
 
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Главная</a>
-                        </li>
-                        <li class="header__nav-item header__nav-item--dropdown">
-                            <a href="#" class="header__nav-link" aria-expanded="false">
-                                <span>О нас</span>
-                                <i class="fas fa-chevron-down header__nav-arrow"></i>
-                            </a>
-                            <div class="header__dropdown">
-                                <a href="#" class="header__dropdown-link">Специалисты</a>
-                                <a href="#" class="header__dropdown-link">Отзывы</a>
-                                <a href="#" class="header__dropdown-link">Документы</a>
-                            </div>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Услуги</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Цены</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Калькулятор</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Акции</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Новости</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Контакты</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Вакансии</a>
-                        </li>
-                    </ul>
-                </nav>
+                <? $APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "top_menu",
+                        array(
+                                "ROOT_MENU_TYPE" => "top",
+                                "MENU_CACHE_TYPE" => "A",
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_CACHE_GET_VARS" => array(),
+                                "MAX_LEVEL" => "2",
+                                "CHILD_MENU_TYPE" => "dropdown",
+                                "USE_EXT" => "Y",
+                                "DELAY" => "N",
+                                "ALLOW_MULTI_SELECT" => "N"
+                        )
+                ); ?>
 
                 <button class="header__burger" id="mobileMenuOpen" aria-label="Открыть меню">
                     <span class="header__burger-line"></span>
@@ -184,35 +153,19 @@ use Bitrix\Main\Page\Asset;
             <span class="header__burger-line"></span>
             <span class="header__burger-line"></span>
         </button>
-        <ul class="header__mobile-nav">
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Главная</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">О нас</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Услуги</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Цены</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Калькулятор</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Акции</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Новости</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Контакты</a>
-            </li>
-            <li class="header__mobile-nav-item">
-                <a href="#" class="header__mobile-nav-link">Вакансии</a>
-            </li>
-        </ul>
+        <? $APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "mobile_menu",
+                array(
+                        "ROOT_MENU_TYPE" => "mobile",
+                        "MAX_LEVEL" => "1",
+                        "MENU_CACHE_TYPE" => "A",
+                        "MENU_CACHE_TIME" => "3600",
+                        "USE_EXT" => "Y",
+                        "DELAY" => "N",
+                        "ALLOW_MULTI_SELECT" => "N"
+                )
+        ); ?>
 
         <div class="header__mobile-contacts">
             <div class="header__mobile-contact-item">
