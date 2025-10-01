@@ -1,4 +1,4 @@
-<?
+<?php
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     die();
 
@@ -16,19 +16,23 @@ use Bitrix\Main\Page\Asset;
 
     <link rel="shortcut icon" type="image/x-icon"
           href="<?= SITE_TEMPLATE_PATH ?>./assets/img/favicon/favicon-dark.svg">
-    <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH . "/assets/style.css" ?>">
+
     <?php
     Asset::getInstance()->addCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/style.css");
 
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/animations.js");
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets//js/stars.js");
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/swiper-bundle.min.js");
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/sliders.js");
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/header-mobile.js");
+    Asset::getInstance()->addJs("https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js", true);
+    Asset::getInstance()->addJs("https://unpkg.com/imask", true);
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/swiper-bundle.min.js", true);
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/sliders.js", true);
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/header-mobile.js", true);
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/animations.js", true);
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/stars.js", true);
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/validation.js", true);
+
+    $APPLICATION->ShowHead();
     ?>
 
-    <?php $APPLICATION->ShowHead(); ?>
 </head>
 <body>
 
@@ -36,7 +40,6 @@ use Bitrix\Main\Page\Asset;
     <?php $APPLICATION->ShowPanel(); ?>
 </div>
 
-<!-- Шапка сайта -->
 <header class="header" id="header">
     <div class="header__top">
         <div class="container">
@@ -49,38 +52,15 @@ use Bitrix\Main\Page\Asset;
                 </div>
 
                 <div class="header__contacts">
-                    <div class="header__contact-group">
-                        <div class="header__contact-item">
-                            <span class="header__contact-label text--numeric">Адрес:</span>
-                            <div class="header__contact-value text--numeric">
-                                <div>Ул. Красный Путь, 70</div>
-                                <div>Ул. Жукова, 78</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="header__contact-group">
-                        <div class="header__contact-item">
-                            <span class="header__contact-label text--numeric">Режим:</span>
-                            <div class="header__contact-value text--numeric">
-                                <div>Пн-Сб — 08:00-20:00</div>
-                                <div>Вс — 09:00-18:00</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="header__contact-group">
-                        <div class="header__contact-item">
-                            <span class="header__contact-label text--numeric">Телефон:</span>
-                            <a href="tel:+73812475574" class="header__phone text--numeric">+7 (3812) 47-55-74</a>
-                        </div>
-
-                        <div class="header__contact-item">
-                            <span class="header__contact-label text--numeric">Почта:</span>
-                            <a href="mailto:stomolomp55@mail.ru"
-                               class="header__email text--numeric">stomolomp55@mail.ru</a>
-                        </div>
-                    </div>
+                    <?php $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "PATH" => SITE_TEMPLATE_PATH . "/inc_areas/header/contacts.php",
+                            ),
+                            false
+                    ); ?>
                 </div>
 
                 <div class="header__badges">
@@ -104,7 +84,7 @@ use Bitrix\Main\Page\Asset;
         <div class="container">
             <div class="header__main-content">
 
-                <? $APPLICATION->IncludeComponent(
+                <?php $APPLICATION->IncludeComponent(
                         "bitrix:menu",
                         "top_menu",
                         array(
@@ -129,12 +109,15 @@ use Bitrix\Main\Page\Asset;
 
                 <div class="header__actions">
                     <div class="header__social">
-                        <a href="#" class="header__social-item" aria-label="Telegram">
-                            <img src="<?= SITE_TEMPLATE_PATH . "./assets/img/header/header-2.svg" ?>" alt="telegram">
-                        </a>
-                        <a href="#" class="header__social-item" aria-label="WhatsApp">
-                            <img src="<?= SITE_TEMPLATE_PATH . "./assets/img/header/header-3.svg" ?>" alt="whatsapp">
-                        </a>
+                        <?php $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "PATH" => SITE_TEMPLATE_PATH . "/inc_areas/header/social_links.php",
+                                ),
+                                false
+                        ); ?>
                     </div>
 
                     <button class="button">
@@ -146,14 +129,13 @@ use Bitrix\Main\Page\Asset;
         </div>
     </div>
 
-    <!-- Мобильное меню -->
     <div class="header__mobile-menu" id="mobileMenu">
         <button class="header__burger header__burger--active" id="mobileMenuClose" aria-label="Закрыть меню">
             <span class="header__burger-line"></span>
             <span class="header__burger-line"></span>
             <span class="header__burger-line"></span>
         </button>
-        <? $APPLICATION->IncludeComponent(
+        <?php $APPLICATION->IncludeComponent(
                 "bitrix:menu",
                 "mobile_menu",
                 array(
@@ -168,24 +150,15 @@ use Bitrix\Main\Page\Asset;
         ); ?>
 
         <div class="header__mobile-contacts">
-            <div class="header__mobile-contact-item">
-                <a href="tel:+73812475574" class="header__mobile-phone">+7 (3812) 47-55-74</a>
-                <a href="mailto:stomolomp55@mail.ru" class="header__mobile-email">stomolomp55@mail.ru</a>
-            </div>
-
-            <div class="header__mobile-contact-item">
-                <div class="header__mobile-address">
-                    <div>Ул. Красный Путь, 70</div>
-                    <div>Ул. Жукова, 78</div>
-                </div>
-            </div>
-
-            <div class="header__mobile-contact-item">
-                <div class="header__mobile-address">
-                    <div>Пн-Сб — 08:00-20:00</div>
-                    <div>Вс — 09:00-18:00</div>
-                </div>
-            </div>
+            <?php $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    array(
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/inc_areas/header/mobile_contacts.php",
+                    ),
+                    false
+            ); ?>
         </div>
     </div>
 
