@@ -16,9 +16,21 @@ use Bitrix\Main\Page\Asset;
 
     <link rel="shortcut icon" type="image/x-icon"
           href="<?= SITE_TEMPLATE_PATH ?>./assets/img/favicon/favicon-dark.svg">
-
     <?php
     Asset::getInstance()->addCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/header.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/appointment.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/footer.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/hero.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/implantation.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/news.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/promotions.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/reviews.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/services.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/specialists.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/blocks/about.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/components/buttons.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/components/text.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/style.css");
 
     Asset::getInstance()->addJs("https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js", true);

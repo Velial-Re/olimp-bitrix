@@ -1,17 +1,3 @@
-@import "./css/components/buttons.css";
-@import "./css/fonts.css";
-@import "./css/blocks/header.css";
-@import "./css/blocks/hero.css";
-@import "./css/blocks/promotions.css";
-@import "./css/blocks/services.css";
-@import "./css/blocks/specialists.css";
-@import "./css/blocks/news.css";
-@import "./css/blocks/appointment.css";
-@import "./css/blocks/footer.css";
-@import "./css/blocks/implantation.css";
-@import "./css/blocks/about.css";
-@import "./css/blocks/reviews.css";
-@import "./css/components/text.css";
 :root {
     --primary-color: #1a73a7;
     --primary-hover: #156190;

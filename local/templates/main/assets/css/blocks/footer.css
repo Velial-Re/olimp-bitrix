@@ -100,7 +100,7 @@
 .footer__social img {
     width: 32px;
     height: 32px;
-    transition: filter .2s;
+    transition: all .2s;
 }
 
 .footer__social img:hover {
@@ -133,6 +133,11 @@
 .footer__contact-link {
     text-decoration: none;
     color: var(--main-color);
+    transition: all .2s;
+}
+
+.footer__contact-link:hover {
+    text-decoration: underline;
 }
 
 .footer__item--main {
@@ -144,6 +149,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1;
+
 }
 
 .footer__item:nth-child(2) {
@@ -169,6 +175,7 @@
 .footer__policy,
 .footer__dev {
     color: var(--main-color);
+    transition: all .2s;
 }
 
 .footer__policy a {
@@ -195,6 +202,7 @@
     height: 28px;
     vertical-align: middle;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .footer__vision img:hover {

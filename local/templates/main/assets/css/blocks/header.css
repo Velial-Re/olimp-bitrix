@@ -102,6 +102,7 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .header__quality:hover {
@@ -136,6 +137,7 @@
 .header__logo-icon {
     width: 120px;
     height: 60px;
+    transition: all .2s;
 }
 
 .header__logo-icon:hover {
@@ -268,6 +270,7 @@
 .header__social-item img {
     width: 32px;
     height: 32px;
+    transition: all .2s;
 }
 
 .header__social-item img:hover {

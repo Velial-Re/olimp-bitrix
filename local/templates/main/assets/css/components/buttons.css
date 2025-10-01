@@ -102,8 +102,8 @@
     justify-content: center;
     color: var(--primary-dark);
     cursor: pointer;
-    transition: var(--transition);
     font-size: 16px;
+    transition: all .2s;
 }
 
 .button--nav:hover {
