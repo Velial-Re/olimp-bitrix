@@ -4,7 +4,7 @@
             <div class="implantation__image tooth-mask-container">
                 <div class="implantation__tooth-mask">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/implantation/implantation-3.jpg" alt="Имплантация"
-                         class="tooth-masked-image">
+                         class="tooth-masked-image" loading="lazy">
                 </div>
                 <div class="implantation__decorations">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/implantation/tooth-decoration-1.svg"

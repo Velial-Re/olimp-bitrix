@@ -27,7 +27,7 @@
             <div class="appointment__image">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/appointment/appointment-1.png"
                      alt="Стоматологическая консультация"
-                     class="appointment__img">
+                     class="appointment__img" loading="lazy">
             </div>
         </div>
     </div>

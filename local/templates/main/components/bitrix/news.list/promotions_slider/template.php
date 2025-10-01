@@ -24,7 +24,7 @@ $this->setFrameMode(true);
                 <div class="promotions__card-image">
                     <?php if (!empty($arItem["PREVIEW_PICTURE"]["SRC"])): ?>
                         <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
-                             alt="<?= isset($arItem["PREVIEW_PICTURE"]["ALT"]) ? $arItem["PREVIEW_PICTURE"]["ALT"] : $arItem['NAME'] ?>">
+                             alt="<?= isset($arItem["PREVIEW_PICTURE"]["ALT"]) ? $arItem["PREVIEW_PICTURE"]["ALT"] : $arItem['NAME'] ?>" loading="lazy">
                     <?php endif; ?>
                 </div>
                 <div class="promotions__card-content">

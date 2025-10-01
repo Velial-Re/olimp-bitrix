@@ -8,5 +8,5 @@
 <div class="promotions__decoration">
     <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/promotions/promotions-3.svg"
          alt="Промо иконка"
-         class="promotions__decoration-icon">
+         class="promotions__decoration-icon" loading="lazy">
 </div>

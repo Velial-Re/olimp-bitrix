@@ -8,7 +8,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
             <div class="about__stat-card">
                 <div class="about__stat-icon">
                     <img src="<?= $arItem['DISPLAY_PROPERTIES']['ICON']['FILE_VALUE']['SRC'] ?>"
-                         alt="<?= $arItem["NAME"] ?>" class="about__stat-icon"/>
+                         alt="<?= $arItem["NAME"] ?>" class="about__stat-icon" loading="lazy"/>
                 </div>
                 <div class="about__stat-content">
                     <div class="about__stat-number"

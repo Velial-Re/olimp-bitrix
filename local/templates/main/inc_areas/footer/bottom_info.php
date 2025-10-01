@@ -8,5 +8,5 @@
     Сайт разработан в <a href="#">IT Company Asmart</a>
 </div>
 <div class="footer__vision">
-    <img src="<?= SITE_TEMPLATE_PATH . "./assets/img/vision.svg" ?>" alt="Версия для слабовидящих">
+    <img src="<?= SITE_TEMPLATE_PATH . "./assets/img/vision.svg" ?>" alt="Версия для слабовидящих" loading="lazy">
 </div>
