@@ -180,4 +180,19 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(() => {
         initializeCards();
     });
+    if (typeof PureCounter !== 'undefined') {
+        new PureCounter({
+            selector: '.about__stat-number, .implantation__stat-number',
+            start: 0,
+            duration: 3,
+            delay: 10,
+            once: true,
+            repeat: false,
+            decimals: 0,
+            legacy: true,
+            filesizing: false,
+            currency: false,
+            separator: true
+        });
+    }
 });
