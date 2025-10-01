@@ -15,7 +15,7 @@ bitrix/modules/updater_partner.log
 sitemap*
 ru/sitemap*
 robots.txt
-
+!/local/templates/main/components/bitrix/
 docker-stuff/log
 
 
