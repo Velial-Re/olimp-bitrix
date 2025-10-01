@@ -20,7 +20,7 @@
 }
 
 .specialists__title {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin-bottom: 24px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .specialists__description {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin: 0;
     width: 100%;
     text-wrap: balance;
@@ -125,14 +125,14 @@
     max-width: 200px;
     font-size: 18px;
     font-weight: 700;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 1.1;
 }
 
 .specialists__card-position {
     font-family: "Raleway", sans-serif;
     font-size: 14px;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 1.1;
 }
 
@@ -183,19 +183,31 @@
     from {
         opacity: 0;
         transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
     }
 }
 
 .specialists__header {
     animation: fadeInUp 0.8s ease-out;
+    -webkit-animation: fadeInUp 0.8s ease-out;
+    -moz-animation: fadeInUp 0.8s ease-out;
+    -ms-animation: fadeInUp 0.8s ease-out;
 }
 
 .specialists__card {
     animation: fadeInUp 0.8s ease-out;
+    -webkit-animation: fadeInUp 0.8s ease-out;
+    -moz-animation: fadeInUp 0.8s ease-out;
+    -ms-animation: fadeInUp 0.8s ease-out;
 }
 
 .specialists__card:nth-child(1) {

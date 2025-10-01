@@ -20,12 +20,12 @@
 }
 
 .reviews__title {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin-bottom: 24px;
 }
 
 .reviews__description {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin: 0;
 }
 
@@ -57,7 +57,7 @@
 .reviews__author {
     font-size: 16px;
     font-weight: 700;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 1.1;
     margin-bottom: 16px;
 }
@@ -65,7 +65,7 @@
 .reviews__text {
     font-size: 14px;
     font-weight: 400;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 1.1;
     margin-bottom: 24px;
 }

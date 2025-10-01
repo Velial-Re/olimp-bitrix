@@ -21,7 +21,7 @@
 
     --text-dark: #2d3748;
     --text-light: #4a5568;
-    --text-muted: #373737;
+    --main-color: #373737;
 
     --white: #ffffff;
     --blue-light-01: #F4F8FC;
@@ -101,7 +101,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    background: #ffffff;
+    background: var(--white);
     font-family: 'Poppins', sans-serif;
 }
 

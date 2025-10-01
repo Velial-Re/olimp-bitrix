@@ -49,7 +49,7 @@
 }
 
 .header__contact-value {
-    color: var(--text-muted);
+    color: var(--main-color);
 }
 
 .header__contact-value div {
@@ -62,7 +62,7 @@
 
 .header__phone,
 .header__email {
-    color: var(--text-muted);
+    color: var(--main-color);
     text-decoration: none;
     transition: var(--transition);
 }
@@ -84,7 +84,7 @@
     align-items: center;
     gap: 4px;
     max-width: 158px;
-    color: var(--text-muted);
+    color: var(--main-color);
 }
 
 .header__badge-icon {
@@ -102,6 +102,10 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
+}
+
+.header__quality:hover {
+    transform: scale(1.1);
 }
 
 .header__main-content {
@@ -132,6 +136,10 @@
 .header__logo-icon {
     width: 120px;
     height: 60px;
+}
+
+.header__logo-icon:hover {
+    transform: scale(1.1);
 }
 
 .header__logo-text {
@@ -180,7 +188,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
-    color: var(--text-muted);
+    color: var(--main-color);
     transition: var(--transition);
     white-space: nowrap;
     text-decoration: none;
@@ -226,7 +234,7 @@
 .header__dropdown-link {
     display: block;
     font-family: 'Poppins', sans-serif;
-    color: var(--text-muted);
+    color: var(--main-color);
     text-decoration: none;
     font-size: 14px;
     transition: var(--transition);
@@ -262,6 +270,10 @@
     height: 32px;
 }
 
+.header__social-item img:hover {
+    transform: scale(1.1);
+}
+
 .header__social-link {
     width: 40px;
     height: 40px;
@@ -281,9 +293,11 @@
     color: var(--white);
     transform: translateY(-2px);
 }
-.header__main-content > .header__burger{
+
+.header__main-content > .header__burger {
     z-index: 3;
 }
+
 .header__burger {
     display: none;
     flex-direction: column;
@@ -396,7 +410,7 @@
 
 .header__mobile-address {
     font-size: 14px;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 1.4;
 }
 

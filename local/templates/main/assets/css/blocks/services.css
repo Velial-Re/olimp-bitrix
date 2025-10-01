@@ -20,7 +20,7 @@
 }
 
 .services__title {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin-bottom: 24px;
     font-size: clamp(24px, 4vw, 48px);
     line-height: 1.2;
@@ -31,7 +31,7 @@
 }
 
 .services__description {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin: 0;
     font-size: clamp(14px, 2.5vw, 16px);
     line-height: 1.5;

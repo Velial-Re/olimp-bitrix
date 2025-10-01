@@ -107,7 +107,7 @@
 }
 
 .promotions__title {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin-bottom: 16px;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .promotions__description {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin: 0;
     font-size: 14px;
     line-height: 1.4;
@@ -336,7 +336,7 @@
 }
 
 .promotions__card-title {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin-bottom: 12px;
     min-height: 32px;
     display: -webkit-box;
@@ -369,7 +369,7 @@
 .promotions__card-text {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 120%;
     margin-bottom: 16px;
     font-size: 13px;

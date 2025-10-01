@@ -19,12 +19,12 @@
 }
 
 .news__title {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin-bottom: 24px;
 }
 
 .news__description {
-    color: var(--text-muted);
+    color: var(--main-color);
     margin: 0;
     width: 100%;
     text-wrap: balance;
@@ -85,7 +85,7 @@
 .news__card-title {
     font-size: 16px;
     font-weight: 700;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 1.1;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -97,7 +97,7 @@
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: var(--text-muted);
+    color: var(--main-color);
     line-height: 1.2;
     display: -webkit-box;
     -webkit-line-clamp: 2;

@@ -46,7 +46,7 @@
     background: transparent;
     color: var(--primary-dark);
     border: 1px solid var(--primary-dark);
-    text-wrap: nowrap;
+    white-space: nowrap;
     padding: 12px 24px;
 }
 .button--outline > i {
