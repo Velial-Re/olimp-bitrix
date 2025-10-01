@@ -65,9 +65,11 @@
 .appointment__input::placeholder {
     color: var(--blue-light-02);
 }
+
 .appointment__input:hover {
 
 }
+
 .appointment__input:focus {
     background: var(--white-15);
     border-color: rgba(255, 255, 255, 0.4);
@@ -126,6 +128,12 @@
 
 .appointment__submit {
     margin-top: 8px;
+}
+
+.appointment__submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .appointment__image {
@@ -219,6 +227,7 @@
     .appointment__title {
         font-size: 24px;
     }
+
     .appointment {
         padding: 32px;
     }
