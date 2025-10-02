@@ -92,14 +92,13 @@ olimp-bitrix/
 │           │   ├── promotions/
 │           │   ├── reviews/
 │           │   ├── services/
-│           │   ├── specialists/
-│           │   └── description.php
-│           ├── index.html
-│           └── style.css
-├── components/
-├── inc_areas/
+│           │   └── specialists/
+│           │   
+│           ├── description.php
+│           ├── footer.php
+│           ├── header.php
+│           └── styles.css
 ├── marketplace/
-├── upload/
 ├── .access.php
 ├── .footer_left.menu.php
 ├── .footer_right.menu.php
