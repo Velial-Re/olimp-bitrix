@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     function initMask() {
-        const phoneInput = document.querySelector('#user_email');
+        const phoneInput = document.querySelector('#user_phone');
 
         if (phoneInput) {
             if (phoneInput._imask) {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const phoneMask = IMask(phoneInput, {
-                mask: '+{7}(000)000-00-00',
+                mask: '+{7} (000) 000-00-00',
                 lazy: false,
                 placeholderChar: '_'
             });

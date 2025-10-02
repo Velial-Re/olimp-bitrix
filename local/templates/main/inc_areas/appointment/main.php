@@ -13,7 +13,7 @@
                         "USE_CAPTCHA" => "N",
                         "OK_TEXT" => "Спасибо! Мы свяжемся с вами в ближайшее время.",
                         "EMAIL_TO" => "test",
-                        "REQUIRED_FIELDS" => array("NAME", "USER_EMAIL"),
+                        "REQUIRED_FIELDS" => array("NAME", "AUTHOR_PHONE"),
                         "EVENT_MESSAGE_ID" => array("7"),
                         "AJAX_MODE" => "Y",
                         "AJAX_OPTION_SHADOW" => "N",

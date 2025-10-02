@@ -34,12 +34,12 @@ $this->setFrameMode(true);
         </div>
 
         <div class="appointment__field">
-            <label for="user_email" class="appointment__label"></label>
+            <label for="user_phone" class="appointment__label"></label>
             <input
                     type="tel"
                     class="appointment__input"
-                    id="user_email"
-                    name="user_email"
+                    id="user_phone"
+                    name="user_phone"
                     placeholder="Ваш телефон"
                     value=""
                     autocomplete="tel"
