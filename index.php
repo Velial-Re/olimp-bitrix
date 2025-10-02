@@ -214,39 +214,6 @@ $APPLICATION->SetTitle("Главная");
                 </div>
             </div>
         </section>
-        <section class="news">
-            <div class="container">
-                <div class="news__content">
-                    <?php $APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            array(
-                                    "AREA_FILE_SHOW" => "file",
-                                    "PATH" => SITE_TEMPLATE_PATH . "/inc_areas/news/header.php",
-                            ),
-                            false
-                    ); ?>
-
-                    <?php $APPLICATION->IncludeComponent(
-                            "bitrix:news.list",
-                            "news",
-                            array(
-                                    "IBLOCK_ID" => getIblockIdByCode('news'),
-                                    "IBLOCK_TYPE" => "content",
-                                    "NEWS_COUNT" => "5",
-                                    "SORT_BY1" => "SORT",
-                                    "SORT_ORDER1" => "ASC",
-                                    "CACHE_TYPE" => "A",
-                                    "CACHE_TIME" => "3600",
-                                    "FIELD_CODE" => array("NAME", "PREVIEW_TEXT", "PREVIEW_PICTURE"),
-                                    "DISPLAY_PICTURE" => "Y",
-                                    "DISPLAY_NAME" => "Y",
-                                    "DISPLAY_PREVIEW_TEXT" => "Y"
-                            )
-                    ); ?>
-                </div>
-            </div>
-        </section>
         <section class="reviews">
             <div class="container">
                 <div class="reviews__content">
@@ -283,6 +250,39 @@ $APPLICATION->SetTitle("Главная");
                                     "CACHE_TIME" => "36000000",
                                     "SET_TITLE" => "N",
                                     "PROPERTY_CODE" => array("PLATFORM_LOGO")
+                            )
+                    ); ?>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__content">
+                    <?php $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "PATH" => SITE_TEMPLATE_PATH . "/inc_areas/news/header.php",
+                            ),
+                            false
+                    ); ?>
+
+                    <?php $APPLICATION->IncludeComponent(
+                            "bitrix:news.list",
+                            "news",
+                            array(
+                                    "IBLOCK_ID" => getIblockIdByCode('news'),
+                                    "IBLOCK_TYPE" => "content",
+                                    "NEWS_COUNT" => "5",
+                                    "SORT_BY1" => "SORT",
+                                    "SORT_ORDER1" => "ASC",
+                                    "CACHE_TYPE" => "A",
+                                    "CACHE_TIME" => "3600",
+                                    "FIELD_CODE" => array("NAME", "PREVIEW_TEXT", "PREVIEW_PICTURE"),
+                                    "DISPLAY_PICTURE" => "Y",
+                                    "DISPLAY_NAME" => "Y",
+                                    "DISPLAY_PREVIEW_TEXT" => "Y"
                             )
                     ); ?>
                 </div>
