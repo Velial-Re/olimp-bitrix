@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const burgerOpen = document.querySelector("#mobileMenuOpen");
     const burgerClose = document.querySelector("#mobileMenuClose");
     const menu = document.querySelector("#mobileMenu");
-    (document.body.clientWidth < 999) ? menu.style.display = "block" : "none";
+    if (!burgerOpen || !menu) return;
 
     burgerOpen.addEventListener("click", function () {
         menu.classList.toggle("header__mobile-menu--active");
