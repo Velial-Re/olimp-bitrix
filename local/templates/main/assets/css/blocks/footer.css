@@ -208,7 +208,11 @@
 .footer__vision img:hover {
     transform: scale(1.1);
 }
-
+@media (max-width: 1280px) {
+    .footer__inline-actions{
+        flex-direction: column;
+    }
+}
 @media (max-width: 1200px) {
     .footer__main {
         flex-wrap: wrap;
@@ -220,6 +224,9 @@
         flex: 0 0 100%;
         min-width: 93px;
         margin-bottom: 0;
+    }
+    .footer__inline-actions{
+        align-items: flex-start;
     }
 }
 
